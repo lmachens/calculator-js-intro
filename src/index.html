@@ -12,25 +12,33 @@
       [name="second"] {
         background: lightseagreen;
       }
-      .submit {
+      button {
         background: lightblue;
+      }
+      #result {
+        font-size: 1.2em;
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
     <input
-      type="text"
+      type="number"
       name="first"
       placeholder="Enter first number"
       value="22"
     />
     <input
-      type="text"
+      type="number"
       name="second"
       placeholder="Enter second number"
       value="117"
     />
-    <button class="submit">Submit</button>
+    <button class="sum">Sum</button>
+    <button class="sub">Subtraction</button>
+    <button class="multiply">Multiply</button>
+    <button class="divide">Divide</button>
+    <div id="result">0</div>
     <script src="index.js"></script>
   </body>
 </html>
