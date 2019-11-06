@@ -25,6 +25,7 @@ sumButton.addEventListener("click", function() {
   const sumResult = sum(numbers.first, numbers.second);
   const digits = countDigits(sumResult);
   result.innerHTML = sumResult + " " + digits;
+  // instead of overriding innerHTML, better add a new element and append it
 });
 
 subButton.addEventListener("click", function() {
