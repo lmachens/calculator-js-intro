@@ -1,6 +1,6 @@
 "use strict";
 
-import { sum, sub, multiply, divide } from "./lib/operators";
+import { sum, sub, multiply, divide, countDigits } from "./lib/operators";
 
 const firstInput = document.querySelector("[name=first]");
 const secondInput = document.querySelector("[name=second]");
@@ -22,7 +22,9 @@ function getInput() {
 
 sumButton.addEventListener("click", function() {
   const numbers = getInput();
-  result.innerHTML = sum(numbers.first, numbers.second);
+  const sumResult = sum(numbers.first, numbers.second);
+  const digits = countDigits(sumResult);
+  result.innerHTML = sumResult + " " + digits;
 });
 
 subButton.addEventListener("click", function() {
