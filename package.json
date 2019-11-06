@@ -8,7 +8,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "scripts": {
-    "dev": "parcel *.html",
+    "dev": "parcel src/*.html",
     "build": "parcel build src/*.html"
   },
   "repository": {
@@ -16,8 +16,8 @@
     "url": "git+https://github.com/lmachens/calculator-js-intro.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Leon Machens",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lmachens/calculator-js-intro/issues"
   },
