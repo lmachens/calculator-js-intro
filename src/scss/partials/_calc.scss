@@ -1,0 +1,32 @@
+.calc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.calc__input {
+  flex-basis: 100%;
+  height: 30px;
+  text-align: right;
+}
+
+.calc__button {
+  flex-basis: 33.33333%;
+  height: 40px;
+  background: #ddd;
+
+  &--number {
+    background: #fff;
+  }
+}
+
+.calc__log {
+  background: #222;
+  color: #fefefe;
+  flex-basis: 100%;
+  text-align: right;
+  padding: 10px;
+  overflow: auto;
+  height: 150px;
+}
