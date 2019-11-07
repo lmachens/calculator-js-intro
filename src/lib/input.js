@@ -1,6 +1,14 @@
 export function appendInput(element, value) {
   element.value = element.value + value;
 }
+export function createDivWithContent(content) {
+  const element = document.createElement("div");
+  element.innerHTML = content;
+  return element;
+}
+export function appendElementToElement(parent, child) {
+  parent.appendChild(child);
+}
 
 export function addNumberClickEvents(numberElements, onClick) {
   numberElements.forEach(function(numberElement) {
@@ -8,4 +16,8 @@ export function addNumberClickEvents(numberElements, onClick) {
       onClick(numberElement.innerText);
     });
   });
+}
+
+export function clearInput(input) {
+  input.value = "";
 }
