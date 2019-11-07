@@ -1,6 +1,14 @@
-import { appendInput } from "./lib/input";
+import { appendInput /*, addNumberClickEvents */ } from "./lib/input";
 
 const calcInput = document.querySelector(".calc__input");
+const calcButtonNumbers = document.querySelectorAll(".calc__button--number");
 
-appendInput(calcInput, "122");
-appendInput(calcInput, "222122");
+// addNumberClickEvents(calcButtonNumbers, function(text) {
+//   appendInput(calcInput, text);
+// });
+
+calcButtonNumbers.forEach(function(calcButtonNumber) {
+  calcButtonNumber.addEventListener("click", function() {
+    appendInput(calcInput, calcButtonNumber.innerText);
+  });
+});
