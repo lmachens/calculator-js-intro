@@ -4,41 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CalculatorOver9000</title>
-    <style>
-      [name="first"] {
-        background: lightpink;
-      }
-      [name="second"] {
-        background: lightseagreen;
-      }
-      button {
-        background: lightblue;
-      }
-      #result {
-        font-size: 1.2em;
-        font-weight: bold;
-      }
-    </style>
+    <title>Calculator Over9000</title>
+    <link rel="stylesheet" href="scss/index.scss" />
   </head>
   <body>
-    <input
-      type="number"
-      name="first"
-      placeholder="Enter first number"
-      value="22"
-    />
-    <input
-      type="number"
-      name="second"
-      placeholder="Enter second number"
-      value="117"
-    />
-    <button class="sum">Sum</button>
-    <button class="sub">Subtraction</button>
-    <button class="multiply">Multiply</button>
-    <button class="divide">Divide</button>
-    <div id="result">0</div>
+    <header>
+      <h1>Calculator Over9000</h1>
+    </header>
+    <main class="calc">
+      <input type="number" placeholder="Enter number" class="calc__input" />
+
+      <button class="calc__button calc__button--number">7</button>
+      <button class="calc__button calc__button--number">8</button>
+      <button class="calc__button calc__button--number">9</button>
+      <button class="calc__button calc__button--number">4</button>
+      <button class="calc__button calc__button--number">5</button>
+      <button class="calc__button calc__button--number">6</button>
+      <button class="calc__button calc__button--number">1</button>
+      <button class="calc__button calc__button--number">2</button>
+      <button class="calc__button calc__button--number">3</button>
+      <button class="calc__button">-</button>
+      <button class="calc__button calc__button--number">0</button>
+      <button class="calc__button">+</button>
+      <button class="calc__button">*</button>
+      <button class="calc__button">/</button>
+      <button class="calc__button">=</button>
+      <aside class="calc__log"></aside>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>

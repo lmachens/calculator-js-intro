@@ -3,17 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "@babel/core": "^7.7.0",
-    "@babel/preset-env": "^7.7.1",
-    "babel-jest": "^24.9.0",
-    "eslint": "^6.6.0",
-    "jest": "^24.9.0",
-    "parcel-bundler": "^1.12.4"
-  },
   "scripts": {
-    "dev": "parcel src/*.html -p 3334",
+    "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
     "test": "jest",
     "test-watch": "jest --watch"
@@ -22,11 +13,19 @@
     "type": "git",
     "url": "git+https://github.com/lmachens/calculator-js-intro.git"
   },
-  "keywords": [],
-  "author": "Leon Machens",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/lmachens/calculator-js-intro/issues"
   },
-  "homepage": "https://github.com/lmachens/calculator-js-intro#readme"
+  "homepage": "https://github.com/lmachens/calculator-js-intro#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.3"
+  }
 }
