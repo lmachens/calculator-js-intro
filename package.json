@@ -1,0 +1,27 @@
+{
+  "name": "calculator-js-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmachens/calculator-js-intro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmachens/calculator-js-intro/issues"
+  },
+  "homepage": "https://github.com/lmachens/calculator-js-intro#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.3"
+  }
+}
